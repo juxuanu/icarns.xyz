@@ -24,20 +24,15 @@ export default function PostPage(props: Props) {
       <Head>
         <title>Nin del Sol: {matterResult.data.title ?? "[Sense títol]"}</title>
       </Head>
-      <h1 className="mx-auto text-3xl">
-        {matterResult.data.title ?? "[Sense títol]"}
-      </h1>
-      <p className="font-mono text-xs">{matterResult.data.date ?? ""}</p>
-      <Markdown
-        className="
-        [&>h2]:text-2xl [&>h2]:underline
-        [&>h3]:text-xl [&>h3]:underline
-        [&>h4]:text-lg [&>h4]:underline
-        [&>h5]:underline [&>h5]:font-bold
-      "
-      >
-        {matterResult.content}
-      </Markdown>
+      <div className="[&>*]:mx-auto">
+        <h1 className="text-center text-3xl">
+          {matterResult.data.title ?? "[Sense títol]"}
+        </h1>
+        <p className="font-mono text-xs text-center mt-5 mb-10">
+          {matterResult.data.date ?? ""}
+        </p>
+        <Markdown className="prose prose-blue">{matterResult.content}</Markdown>
+      </div>
     </>
   );
 }
