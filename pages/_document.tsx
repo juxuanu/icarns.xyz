@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         </Head>
         <body
-          className="bg-neutral-300 text-gray-900
+          className="bg-neutral-100 text-gray-900
                     transition-all scroll-smooth
                     mx-auto max-w-[1200px]
                     [&>*]:mx-10"

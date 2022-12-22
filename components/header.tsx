@@ -9,7 +9,7 @@ export default function Header() {
                  border-b border-gray-500 border-solid
                  [&>*]:mx-auto"
     >
-      <h1 className="text-2xl hover:text-slate-300">
+      <h1 className="text-2xl hover:text-neutral-700">
         <Link href={"/"}>Nin del Sol</Link>
       </h1>
     </header>

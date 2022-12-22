@@ -12,14 +12,14 @@ export default function PostsList(props: Props) {
       {props.postsAndMetadata.map((post) => (
         <li
           className="border border-slate-500 p-4 rounded-md shadow-md cursor-pointer
-          transition-all hover:bg-gray-600"
+          transition-all hover:bg-slate-300"
           key={post.slug}
         >
           <Link className="" href={`/posts/${post.slug}`}>
             <div>
               <h3 className="font-semibold">{post.title}</h3>
               <p className="text-sm">{post.subtitle}</p>
-              <p className="text-white text-xs font-light">{post.dateString}</p>
+              <p className="text-xs font-light">{post.dateString}</p>
             </div>
           </Link>
         </li>

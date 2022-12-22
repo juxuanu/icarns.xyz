@@ -31,7 +31,9 @@ export default function PostPage(props: Props) {
         <p className="font-mono text-xs text-center mt-5 mb-10">
           {matterResult.data.date ?? ""}
         </p>
-        <Markdown className="prose prose-blue">{matterResult.content}</Markdown>
+        <Markdown className="prose prose-neutral">
+          {matterResult.content}
+        </Markdown>
       </div>
     </>
   );
