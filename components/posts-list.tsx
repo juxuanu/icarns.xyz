@@ -8,7 +8,7 @@ export interface Props {
 
 export default function PostsList(props: Props) {
   return (
-    <ul className="list-none flex flex-wrap content-evenly gap-6 mt-5 rounded mx-auto">
+    <ul className="list-none flex flex-wrap justify-center sm:justify-evenly gap-6 mt-5 rounded mx-auto">
       {props.postsAndMetadata.map((post) => (
         <li
           className="border border-slate-500 p-4 rounded-md shadow-md cursor-pointer
