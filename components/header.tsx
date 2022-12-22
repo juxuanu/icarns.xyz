@@ -6,7 +6,7 @@ export default function Header() {
     <header
       className="mx-auto mt-8 pb-8 mb-6
                  flex flex-col
-                 border-b border-gray-500 border-solid
+                 border-b border-gray-300 border-solid
                  [&>*]:mx-auto"
     >
       <h1 className="text-2xl hover:text-neutral-700">

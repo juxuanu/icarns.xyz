@@ -14,4 +14,4 @@ date: 28/11/2022
 Posar arròs a bullir. Quan comença, sofregir primer ceba i després pastanaga. Afegir-hi, llavors, ou, i fer tipus remenat.
 Afegir salsa de soja. Un cop fet, afegir arròs bullit. 
 
-> Opcional: afegir espècies com pebre.
+*Opcional: afegir espècies com pebre.*
