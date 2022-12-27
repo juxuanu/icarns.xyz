@@ -8,7 +8,7 @@ export function getPostsAndMetadata(): PostMetadata[] {
 
   return files.map((f) => {
     const matterResult = matter(fs.readFileSync(folder + f));
-    console.log(matterResult);
+
     return {
       slug: f.replace(".md", ""),
       title: matterResult.data.title ?? "[Sense títol]",
