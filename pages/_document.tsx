@@ -1,7 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import { Footer, Header } from "../components";
 
 export default class MyDocument extends Document {
   render() {

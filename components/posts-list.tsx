@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import PostMetadata from "../utils/interfaces/post-metadata";
+import { PostMetadata } from "../utils";
 
 export interface Props {
   postsAndMetadata: PostMetadata[];

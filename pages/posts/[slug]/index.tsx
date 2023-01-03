@@ -8,9 +8,7 @@ import Head from "next/head";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import PostMetadata from "../../../utils/interfaces/post-metadata";
-import { getPostsAndMetadata } from "../../../utils/functions/get-posts-and-metadata";
-import { getPostMetadata } from "../../../utils/functions/get-post-metadata";
+import { getPostMetadata, PostMetadata } from "../../../utils";
 
 interface Props {
   content: string;
