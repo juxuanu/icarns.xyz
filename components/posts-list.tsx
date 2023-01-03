@@ -17,7 +17,7 @@ export default function PostsList(props: Props) {
         >
           <Link className="" href={`/posts/${post.slug}`}>
             <div>
-              <h3 className="font-semibold">{post.title}</h3>
+              <h2 className="font-semibold">{post.title}</h2>
               <p className="text-sm">{post.subtitle}</p>
               <p className="text-xs font-light">{post.dateString}</p>
             </div>
