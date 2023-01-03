@@ -11,6 +11,10 @@ export default class MyDocument extends Document {
       >
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta
+            name="description"
+            content="Receptes curtes per sobreviure en dies feiners -- també em serveix per practicar NextJS ;-)"
+          />
         </Head>
         <body
           className="mx-auto max-w-[1200px]
