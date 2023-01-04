@@ -11,8 +11,8 @@ export default function PostsList(props: Props) {
     <ul className="list-none flex flex-wrap justify-center sm:justify-evenly gap-6 mt-5 rounded mx-auto">
       {props.postsAndMetadata.map((post) => (
         <li
-          className="border border-slate-200 p-4 rounded-md shadow-md cursor-pointer
-          transition-all hover:bg-slate-200"
+          className="border border-neutral-200 p-4 rounded-md shadow-md cursor-pointer
+          transition-all hover:bg-neutral-200"
           key={post.slug}
         >
           <Link className="" href={`/posts/${post.slug}`}>
