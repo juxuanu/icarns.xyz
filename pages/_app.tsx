@@ -6,6 +6,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const zillaSlab = Zilla_Slab({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-zilla-slab",
+  subsets: ["latin"],
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
