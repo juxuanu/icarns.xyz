@@ -8,22 +8,16 @@ export interface Props {
 
 export default function PostsList(props: Props) {
   return (
-    <ul className="list-none flex flex-wrap justify-center sm:justify-evenly gap-6 mt-5 rounded mx-auto">
+    <div className="flex flex-wrap justify-center sm:justify-evenly gap-6 mt-5 rounded mx-auto">
       {props.postsAndMetadata.map((post) => (
-        <li
-          className="border border-neutral-200 p-4 rounded-md shadow-md cursor-pointer
-          transition-all hover:bg-neutral-200"
-          key={post.slug}
-        >
-          <Link className="" href={`/posts/${post.slug}`}>
-            <div>
-              <h2 className="font-semibold">{post.title}</h2>
-              <p className="text-sm">{post.subtitle}</p>
-              <p className="text-xs font-light">{post.dateString}</p>
-            </div>
-          </Link>
-        </li>
+        <Link href={`/posts/${post.slug}`} key={post.slug}>
+          <div className="hover:bg-neutral-200 border border-neutral-200 p-4 rounded-md shadow-md transition-all">
+            <h2 className="font-semibold">{post.title}</h2>
+            <p className="text-sm">{post.subtitle}</p>
+            <p className="text-xs font-slab font-light">{post.dateString}</p>
+          </div>
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 }

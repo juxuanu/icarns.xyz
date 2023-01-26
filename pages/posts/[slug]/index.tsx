@@ -26,7 +26,7 @@ export default function PostPage(props: Props) {
         <h1 className="text-center text-3xl">
           {matterResult.data.title ?? "[Sense títol]"}
         </h1>
-        <p className="font-slab text-sm uppercase text-opacity-50 text-center mt-5 mb-10">
+        <p className="font-slab font-light text-sm text-opacity-50 text-center mt-5 mb-10">
           {matterResult.data.date ?? ""}
         </p>
         <Markdown className="prose prose-neutral">

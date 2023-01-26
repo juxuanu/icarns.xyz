@@ -16,10 +16,7 @@ export default class MyDocument extends Document {
             content="Receptes curtes per sobreviure en dies feiners"
           />
         </Head>
-        <body
-          className="mx-auto max-w-[1200px]
-                    [&>*]:mx-10"
-        >
+        <body className="mx-auto max-w-[1200px]">
           <Header />
           <Main />
           <Footer />
