@@ -22,7 +22,7 @@ export default function PostPage(props: Props) {
       <Head>
         <title>Nin del Sol: {matterResult.data.title ?? "[Sense títol]"}</title>
       </Head>
-      <div className="[&>*]:mx-auto">
+      <div className="[&>*]:mx-auto px-4">
         <h1 className="text-center text-3xl">
           {matterResult.data.title ?? "[Sense títol]"}
         </h1>
