@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
         lang="ca"
       >
         <Head>
+          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
           <meta
             name="description"
