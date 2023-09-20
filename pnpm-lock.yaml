@@ -22,9 +22,6 @@ dependencies:
     version: 0.32.6
 
 devDependencies:
-  '@next/font':
-    specifier: ^13.5.2
-    version: 13.5.2
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.3)
@@ -159,10 +156,6 @@ packages:
     resolution: {integrity: sha512-JUANdYNCddhmQBjQQPxEJYL7GMCqYtbfrdmtX7c013srig7waNCG69Aoql7CgAgjdy8jn1ovHVdcF/NB46XN3Q==}
     dependencies:
       glob: 7.1.7
-    dev: true
-
-  /@next/font@13.5.2:
-    resolution: {integrity: sha512-c9EXqdXMEErMLrC71wZvpcOnNVkEEufZOO3EjgQJcKQUwPISvnkgIj9GKFIop0rX2dLNdzL3OC/4nrcAqWqUsg==}
     dev: true
 
   /@next/swc-darwin-arm64@13.4.2:
