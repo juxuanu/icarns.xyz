@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import { Montserrat, Zilla_Slab } from "@next/font/google";
+import { Montserrat, Zilla_Slab } from "next/font/google";
 import "../styles/global.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
