@@ -20,7 +20,7 @@ export default function PostPage(props: Props) {
   return (
     <>
       <Head>
-        <title>Nin del Sol: {matterResult.data.title ?? "[Sense títol]"}</title>
+        <title key={"title"}>{matterResult.data.title ?? "Nin del Sol"}</title>
       </Head>
       <div className="[&>*]:mx-auto px-4">
         <h1 className="text-center text-3xl">
@@ -38,13 +38,13 @@ export default function PostPage(props: Props) {
 }
 
 export async function getStaticProps(
-  context: GetStaticPropsContext
+  context: GetStaticPropsContext,
 ): Promise<GetStaticPropsResult<Props>> {
   return {
     props: {
       content: fs.readFileSync(
         `posts/${context.params!.slug as string}.md`,
-        "utf-8"
+        "utf-8",
       ),
       metadata: getPostMetadata(context.params!.slug as string),
     },
